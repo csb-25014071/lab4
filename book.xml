@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue>
+  <book id="B-001">
+    <title>The Design of Everyday Things</title>
+    <author>Don Norman</author>
+    <price currency="USD">19.95</price>
+  </book>
+  <book id="B-002">
+    <title>Clean Code</title>
+    <author>Robert C. Martin</author>
+    <price currency="USD">34.50</price>
+  </book>
+  <book id="B-003">
+    <title>Understanding Comics</title>
+    <author>Scott McCloud</author>
+    <price currency="USD">22.00</price>
+  </book>
+  <book id="B-004">
+    <title>A Wizard of Earthsea</title>
+    <author>Ursula K. Le Guin</author>
+    <price currency="USD">14.25</price>
+  </book>
+</catalogue>

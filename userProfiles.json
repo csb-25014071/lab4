@@ -1,0 +1,56 @@
+[
+  {
+    "firstName": "Avery",
+    "lastName": "Morgan",
+    "email": "avery.morgan@example.com",
+    "dateOfBirth": "1998-04-12",
+    "address": {
+      "street": "184 Cedar Avenue",
+      "city": "Portland",
+      "state": "Oregon",
+      "zipCode": "97205"
+    },
+    "preferences": {
+      "theme": "Light",
+      "language": "English",
+      "notifications": true,
+      "subscription": true
+    }
+  },
+  {
+    "firstName": "Jordan",
+    "lastName": "Lee",
+    "email": "jordan.lee@example.com",
+    "dateOfBirth": "2001-09-23",
+    "address": {
+      "street": "52 Lake Street",
+      "city": "Madison",
+      "state": "Wisconsin",
+      "zipCode": "53703"
+    },
+    "preferences": {
+      "theme": "Dark",
+      "language": "English",
+      "notifications": false,
+      "subscription": false
+    }
+  },
+  {
+    "firstName": "Samira",
+    "lastName": "Khan",
+    "email": "samira.khan@example.com",
+    "dateOfBirth": "1995-12-05",
+    "address": {
+      "street": "907 Willow Lane",
+      "city": "Austin",
+      "state": "Texas",
+      "zipCode": "78701"
+    },
+    "preferences": {
+      "theme": "System",
+      "language": "English",
+      "notifications": true,
+      "subscription": false
+    }
+  }
+]

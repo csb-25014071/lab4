@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small XML and JSON lab displaying a book catalogue and user profiles with browser fetch APIs.">
+    <title>XML &amp; JSON Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="XML and JSON Lab home">DATA<span>LAB</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#catalogue">XML catalogue</a>
+          <a href="#profiles">JSON profiles</a>
+        </nav>
+        <span class="course-tag">WEB FUNDAMENTALS / LAB 01</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">STRUCTURED DATA EXERCISE</p>
+          <h1 id="page-title">XML <span>&amp;</span> JSON</h1>
+          <p class="intro-text">One page, two formats. Browse a small book catalogue and a set of sample user profiles loaded directly from structured data files.</p>
+        </div>
+        <div class="format-key" aria-label="Data formats used">
+          <div><span class="key-mark xml-mark">X</span><span><strong>XML</strong><small>DOMParser</small></span></div>
+          <div><span class="key-mark json-mark">{ }</span><span><strong>JSON</strong><small>response.json()</small></span></div>
+        </div>
+      </section>
+
+      <section class="data-section" id="catalogue" aria-labelledby="catalogue-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / XML DOCUMENT</p>
+            <h2 id="catalogue-title">Book catalogue</h2>
+          </div>
+          <span class="source-label"><span class="status-dot" id="books-status-dot"></span><span id="books-status" role="status">Loading book.xml</span></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">ID</th><th scope="col">Title</th><th scope="col">Author</th><th scope="col">Price</th></tr></thead>
+            <tbody id="books-list"><tr><td colspan="4" class="loading-cell">Loading catalogue…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="section-note">Source: <code>book.xml</code> <span aria-hidden="true">/</span> parsed with <code>DOMParser</code></p>
+      </section>
+
+      <section class="data-section profiles-section" id="profiles" aria-labelledby="profiles-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / JSON DOCUMENT</p>
+            <h2 id="profiles-title">User profiles</h2>
+          </div>
+          <span class="source-label"><span class="status-dot" id="profiles-status-dot"></span><span id="profiles-status" role="status">Loading userProfiles.json</span></span>
+        </div>
+        <div class="profile-grid" id="profiles-list" aria-live="polite">
+          <p class="loading-cell">Loading profiles…</p>
+        </div>
+        <p class="section-note">Source: <code>userProfiles.json</code> <span aria-hidden="true">/</span> loaded with <code>fetch</code></p>
+      </section>
+    </main>
+
+    <footer>
+      <span>XML &amp; JSON LAB</span>
+      <span>Structured data, rendered in the browser.</span>
+    </footer>
+  </body>
+</html>
